@@ -1,0 +1,72 @@
+*{
+   padding: 0;
+   margin: 0;
+}
+
+html, body{
+   min-width: 100vw;
+   min-height: 100vh;
+}
+
+.wrapper{
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+   justify-content: center;
+}
+
+.container{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.grid{
+   width: 300px;
+   height: 300px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   align-self: center;
+}
+
+.grid__item{
+   border-left: 1px solid black;
+   border-bottom: 1px solid black;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 40px;
+}
+
+.grid__item:nth-child(1), .grid__item:nth-child(2), .grid__item:nth-child(3){
+   border-top: 1px solid black;
+}
+
+.grid__item:nth-child(3), .grid__item:nth-child(6), .grid__item:nth-child(9){
+   border-right: 1px solid black;
+}
+
+.container > .additive__actions{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   align-self: center;
+}
+
+button{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   padding: 16px;
+   width: 240px;
+   border-radius: 10px;
+   background-color: blue;
+   cursor: pointer;
+   align-self: center;
+}
